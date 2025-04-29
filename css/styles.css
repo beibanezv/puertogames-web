@@ -8,7 +8,7 @@
   --espaciado: 1rem;
 }
 
-/* 🔹 Estilos Generales */
+/*Estilos Generales */
 body {
   font-family: var(--fuente-principal);
   margin: 0;
@@ -16,7 +16,7 @@ body {
   color: var(--color-texto);
 }
 
-/* 🔹 Navbar */
+/*estilos del navbar */
 .navbar {
   background-color: var(--color-primario);
   padding: 1rem 2rem;
@@ -34,6 +34,7 @@ body {
   transition: color 0.3s ease;
 }
 
+/* para cuando ponen el mouse sobre el navbar*/
 .navbar:hover h1 {
   color: var(--color-acento);
 }
@@ -59,13 +60,14 @@ body {
   text-align: center;
 }
 
+/* para cuando ponen el mouse sobre un boton del navbar*/
 .nav-button:hover {
   background-color: var(--color-acento);
   transform: translateY(-3px);
   opacity: 0.9;
 }
 
-/* 🔹 Hero */
+/* estilos del Hero */
 .hero {
   background: 
     linear-gradient(135deg, rgba(74, 14, 24, 0.7), rgba(100, 30, 44, 0.7)),
@@ -74,6 +76,7 @@ body {
   padding: 6rem 2rem;
 }
 
+/* aqui cambio un poco el texto dentro del hero*/
 .hero h2 {
   font-size: 2.5rem;
 }
@@ -83,7 +86,8 @@ body {
   font-size: 1.2rem;
 }
 
-/* 🔹 Botón principal */
+
+/*estilo para botones principales */
 .cta-button {
   background-color: var(--color-secundario);
   color: var(--color-texto);
@@ -95,12 +99,12 @@ body {
   display: inline-block;
   transition: all 0.4s ease;
 }
-
+/* cuando pasa el mouse por el boton */
 .cta-button:hover {
   background-color: var(--color-acento);
 }
 
-/* 🔹 Sección Categorías */
+/* estilo seccion categorías */
 .categorias {
   padding: 4rem 2rem;
   text-align: center;
@@ -125,12 +129,13 @@ body {
   transform: scale(1.05);
 }
 
+/*redimension fotos de las categorias */
 .categoria img {
   width: 80px;
   height: 80px;
 }
 
-/* 🔹 Sección Productos Destacados */
+/*seccion productos destacados (3 juegos)*/
 .destacados {
   padding: 4rem 2rem;
   text-align: center;
@@ -163,13 +168,13 @@ body {
   border-radius: 8px;
 }
 
-/* 🔹 Llamado a la acción */
+/* estilo llamado a la accion 😮🤯 */
 .cta-final {
   text-align: center;
   padding: 3rem 2rem;
 }
 
-/* 🔹 Footer */
+/* estilos del footer */
 footer {
   background-color: var(--color-primario-cambio);
   text-align: center;
@@ -178,7 +183,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* 🔹 Página Producto Detalle */
+/* página producto detalle */
 .producto-contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -208,7 +213,7 @@ footer {
   gap: 1rem;
 }
 
-/* 🔹 Página de Contacto */
+/* página de cOntacto */
 .formulario-contacto {
   padding: 4rem 2rem;
   text-align: center;
@@ -232,7 +237,7 @@ footer {
   font-size: 1rem;
 }
 
-/* 🔹 Media Queries (Responsive) */
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
