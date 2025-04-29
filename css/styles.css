@@ -1,0 +1,252 @@
+:root {
+  --color-primario: #4a0e18;       
+  --color-secundario: #641e2c;     
+  --color-acento: #8b2d3f;         
+  --color-fondo-secundario: #b24052;
+  --color-texto: #f2e9e4;
+  --fuente-principal: 'Roboto', sans-serif;
+  --espaciado: 1rem;
+}
+
+/* 🔹 Estilos Generales */
+body {
+  font-family: var(--fuente-principal);
+  margin: 0;
+  background-color: var(--color-primario);
+  color: var(--color-texto);
+}
+
+/* 🔹 Navbar */
+.navbar {
+  background-color: var(--color-primario);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+}
+
+.navbar h1 {
+  color: var(--color-texto);
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.navbar:hover h1 {
+  color: var(--color-acento);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-secundario);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-texto);
+  font-weight: bold;
+  transition: all 0.4s ease;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: var(--color-acento);
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* 🔹 Hero */
+.hero {
+  background: 
+    linear-gradient(135deg, rgba(74, 14, 24, 0.7), rgba(100, 30, 44, 0.7)),
+    url(../assets/img/fondo.jpg) center/cover no-repeat;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+/* 🔹 Botón principal */
+.cta-button {
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--color-acento);
+}
+
+/* 🔹 Sección Categorías */
+.categorias {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.grid-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.categoria {
+  background-color: var(--color-fondo-secundario);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+.categoria img {
+  width: 80px;
+  height: 80px;
+}
+
+/* 🔹 Sección Productos Destacados */
+.destacados {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.grid-productos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.producto {
+  background-color: var(--color-fondo-secundario);
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-texto);
+  transition: transform 0.3s ease;
+  width: 200px;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* 🔹 Llamado a la acción */
+.cta-final {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+/* 🔹 Footer */
+footer {
+  background-color: var(--color-primario-cambio);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+/* 🔹 Página Producto Detalle */
+.producto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+.producto-imagen img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.producto-detalles {
+  max-width: 400px;
+}
+
+.producto-precio {
+  font-size: 1.8rem;
+  color: var(--color-acento);
+  margin: 1rem 0;
+}
+
+.botones-producto {
+  display: flex;
+  gap: 1rem;
+}
+
+/* 🔹 Página de Contacto */
+.formulario-contacto {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-fondo-secundario);
+  color: var(--color-texto);
+  font-size: 1rem;
+}
+
+/* 🔹 Media Queries (Responsive) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .grid-categorias,
+  .grid-productos,
+  .producto-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto-imagen img {
+    width: 80%;
+  }
+}
