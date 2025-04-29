@@ -237,6 +237,18 @@ footer {
   font-size: 1rem;
 }
 
+
+/* pagina de historia */
+.historia-contenedor{
+  padding: var(--espaciado);
+  background-color: var(--color-acento);
+}
+
+/* pagina de preguntas */
+.preguntas-contenedor{
+  padding: var(--espaciado);
+  background-color: var(--color-acento);
+}
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .navbar {
@@ -246,7 +258,9 @@ footer {
 
   .grid-categorias,
   .grid-productos,
-  .producto-contenedor {
+  .producto-contenedor,
+  .historia-contenedor,
+  .preguntas-contenedor {
     flex-direction: column;
     align-items: center;
   }
